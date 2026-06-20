@@ -7,16 +7,20 @@ This is the official PyTorch implementation of **Frames2Residual: Spatiotemporal
 
 ## Pretrained models
 
-Please place all pretrained models and released checkpoints into the `models/` folder.
+Please place all pretrained image denoisers and released F2R checkpoints into the models/ folder.
 
-```text
 models/
 ├── ISP_CNN.pth        # ISP network for RAW visualization/evaluation
 ├── nafnet_raw.pth     # Pre-trained RAW image denoiser
 ├── nafnet_rgb.pth     # Pre-trained sRGB image denoiser
 ├── raw.pth            # Released F2R RAW video denoising model
 └── rgb_sigma30.pth    # Released F2R sRGB Gaussian sigma=30 model
-```
+
+The NAFNet image denoisers are not included in this repository due to file size limits. Please download nafnet_raw.pth and nafnet_rgb.pth from the following link and place them into the models/ folder:
+
+https://drive.google.com/drive/folders/1REk44iw0usXG9QTjQUH21Epu2MNLBk40?usp=sharing
+
+The released F2R checkpoints, including raw.pth and rgb_sigma30.pth, will be provided separately.
 
 ## Dataset preparation
 
